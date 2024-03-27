@@ -1,0 +1,7 @@
+<div class="flex flex-col items-center justify-center h-screen bg-gray-200">
+    <h1 class="text-3xl font-bold mb-4">{{ vehicle.name | uppercase }}</h1>
+    <img [src]="vehicle.image" alt="{{ vehicle.name }}" class="w-64 h-64 object-cover mb-4">
+    <p class="text-lg mb-2"><strong>Description:</strong> {{ vehicle.description }}</p>
+    <p class="text-lg mb-2"><strong>Creator:</strong> {{ vehicle.creator }}</p>
+    <p class="text-lg mb-2"><strong>Creation Date:</strong> {{ vehicle.creationDate | date }}</p>
+  </div>
